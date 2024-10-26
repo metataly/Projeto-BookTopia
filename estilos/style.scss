@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    text-align: center;
+    font-size: 0.7em;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: transparent;
+
+}
+video{
+    width: 60vw;
+    margin: 0 4vw;
+}
+main{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    div{
+        background-color: #0A1C30;
+        height: 75vh;
+        width: 50vw;
+        margin: 10vh 0;
+        padding: 3vw;
+        border-radius: 40px;
+        font-family: 'Cormorant Garamond', serif;
+
+        h2{
+            text-align: center;
+            font-style: italic;
+        }
+        #entrar{
+            font-family: 'Cinzel', serif;
+            font-size: 1.7em;
+            text-align: center;
+            margin: 2vh 0;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        input{
+            padding: 1.5vh;
+            margin-bottom: 3vh;
+        }
+
+        a{
+            color: lightblue;
+            text-decoration: none;
+            &:hover{
+                color: #0870ac ;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+p{
+    text-align: center;
+}
+
+.botao{
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    padding: 0.7vh;
+    
+    &:hover{
+        background-color: #2A4758 ;
+        cursor: pointer;
+        color: white;
+        border: none;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    img{
+        margin: 0 1vw;
+        width: 3vh;
+        cursor: pointer;
+    }
+}
+.flutuante{
+    position: relative;
+    animation: flutuar 4s ease-in-out infinite;
+  
+    @keyframes flutuar {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px); /* ajuste a altura do movimento */
+      }
+    }
+  }
+
+  @media (max-width: 850px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        div{
+            width: 85vw;
+            height: 55vh;
+            
+            h2{
+                margin-top: 3vh;
+            }
+        }
+    }
+    video{
+        width: 100%;
+        height: 70%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+  
