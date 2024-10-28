@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 26vh;
+}
+header video {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+header nav {
+  position: relative;
+  width: 97%;
+  display: flex;
+  justify-content: end;
+  bottom: 7vh;
+}
+header nav img {
+  width: 25px;
+  margin: 0 15px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+main #menu {
+  width: 18vw;
+  background-color: #0A1C30;
+}
+main #menu ul {
+  position: fixed;
+  margin: 4vh;
+  list-style: none;
+}
+main #menu li {
+  padding: 5vh;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 1.3em;
+}
+main #menu li:hover {
+  background-color: #2A4758;
+}
+main #menu button {
+  background-color: #2A4758;
+  color: white;
+  width: 2vw;
+  border-radius: 5px;
+}
+main div {
+  border: solid 3px salmon;
+  width: 82vw;
+  text-align: center;
+}
+main div h2 {
+  font-family: "Cinzel";
+  font-weight: normal;
+  margin-top: 10vh;
+}
+main div figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main div figure img {
+  width: 10vw;
+  margin: 70px 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  margin: 0 1vw;
+  width: 3vh;
+  cursor: pointer;
+}/*# sourceMappingURL=pagInicial.css.map */

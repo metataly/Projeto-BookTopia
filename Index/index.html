@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imgsVideos/favicon.ico" type="image/png">
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         <div class="flutuante" id="form-container">
             <h2>Entre ou crie uma conta para continuar explorando novos mundos e histórias cativantes.</h2>
             <p id="entrar">LOGIN</p>
-            <form>
+            <form action="../PaginaInicial/pagInicial.html">
                 <legend>Email:</legend>
                 <input type="email" id="email" size="20" placeholder="Digite seu email..." required>
                 <legend>Senha:</legend>
@@ -39,7 +39,7 @@
             
             formContainer.innerHTML = `
                 <p id="entrar">CADASTRE-SE</p>
-                <form>
+                <form action="../PaginaInicial/pagInicial.html" >
                     <legend>Nome:</legend>
                     <input type="text" id="nome" size="40" placeholder="Digite seu nome completo..." required>
                     <legend>Email:</legend>
@@ -58,7 +58,7 @@
             formContainer.innerHTML = `
                 <h2>Entre ou crie uma conta para continuar explorando novos mundos e histórias cativantes.</h2>
                 <p id="entrar">LOGIN</p>
-                <form>
+                <form action="../PaginaInicial/pagInicial.html">
                     <legend>Email:</legend>
                     <input type="email" id="email" size="20" placeholder="Digite seu email..." required>
                     <legend>Senha:</legend>
