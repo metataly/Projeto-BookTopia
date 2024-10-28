@@ -36,10 +36,12 @@ header{
 main{
     width: 100%;
     display: flex;
+    justify-content: center;
     
-    #menu{
+    #barra{
         width: 18vw;
         background-color: #0A1C30;
+        transition: width 0.3s ease;
 
         ul{
             position: fixed;
@@ -52,7 +54,13 @@ main{
             text-align: center;
             font-family: 'Cinzel', serif;
             font-size: 1.3em;
+            cursor: pointer;
 
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            
             &:hover{
                 background-color: #2A4758;
             }
@@ -66,8 +74,7 @@ main{
         }
     }
 
-    div{
-        border: solid 3px salmon;
+    section{
         width: 82vw;
         text-align: center;
 
@@ -76,16 +83,69 @@ main{
             font-weight: normal;
             margin-top: 10vh;
         }
+
         figure{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            margin-top: 10vh;
+
+            div{
+                margin-bottom: 10vh;
+                width: 15vw;
+                background-color: #0A1C30;
+                border-radius: 6px;
+
+                p{
+                   font-family: 'Cormorant Garamond', serif;
+                   font-size: 1.2em;
+                }
+
+                h3{
+                    font-family: 'Cinzel';
+                    font-weight: lighter;
+                }
+            }
 
             img{
+                margin: 10px 30px;
                 width: 10vw;
-                margin: 70px 30px;
+                transition: transform 0.4s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
             }
+             
         }
+    }
+}
+
+.fechada{
+    width: 880vw;
+    
+    ul{
+        content-visibility: hidden;
+    }
+}
+
+#formPagamento{
+    
+    background-color: #2A4758;
+    
+
+}
+button{
+    width: 6vw;
+    border: none;
+    font-family: 'Cormorant Garamond', serif;
+
+    &:hover{
+        background-color: #2A4758 ;
+        cursor: pointer;
+        color: white;
+        
     }
 }
 

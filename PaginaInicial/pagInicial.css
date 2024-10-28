@@ -35,49 +35,97 @@ header nav img {
 main {
   width: 100%;
   display: flex;
+  justify-content: center;
 }
-main #menu {
+main #barra {
   width: 18vw;
   background-color: #0A1C30;
+  transition: width 0.3s ease;
 }
-main #menu ul {
+main #barra ul {
   position: fixed;
   margin: 4vh;
   list-style: none;
 }
-main #menu li {
+main #barra li {
   padding: 5vh;
   text-align: center;
   font-family: "Cinzel", serif;
   font-size: 1.3em;
+  cursor: pointer;
 }
-main #menu li:hover {
+main #barra li a {
+  text-decoration: none;
+  color: white;
+}
+main #barra li:hover {
   background-color: #2A4758;
 }
-main #menu button {
+main #barra button {
   background-color: #2A4758;
   color: white;
   width: 2vw;
   border-radius: 5px;
 }
-main div {
-  border: solid 3px salmon;
+main section {
   width: 82vw;
   text-align: center;
 }
-main div h2 {
+main section h2 {
   font-family: "Cinzel";
   font-weight: normal;
   margin-top: 10vh;
 }
-main div figure {
+main section figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 10vh;
 }
-main div figure img {
+main section figure div {
+  margin-bottom: 10vh;
+  width: 15vw;
+  background-color: #0A1C30;
+  border-radius: 6px;
+}
+main section figure div p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2em;
+}
+main section figure div h3 {
+  font-family: "Cinzel";
+  font-weight: lighter;
+}
+main section figure img {
+  margin: 10px 30px;
   width: 10vw;
-  margin: 70px 30px;
+  transition: transform 0.4s ease;
+}
+main section figure img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.fechada {
+  width: 880vw;
+}
+.fechada ul {
+  content-visibility: hidden;
+}
+
+#formPagamento {
+  background-color: #2A4758;
+}
+
+button {
+  width: 6vw;
+  border: none;
+  font-family: "Cormorant Garamond", serif;
+}
+button:hover {
+  background-color: #2A4758;
+  cursor: pointer;
+  color: white;
 }
 
 footer {

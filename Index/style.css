@@ -100,7 +100,7 @@ footer img {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* ajuste a altura do movimento */
+    transform: translateY(-10px);
   }
 }
 

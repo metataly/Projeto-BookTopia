@@ -19,44 +19,215 @@
         </nav>
     </header>
     <main>
-        <nav id="menu">
-            <button id = "menuClick">☰</button>
+        <nav id="barra">
+            <button id = "menu">☰</button>
            <ul>
-            <li>PROMOÇÕES</li>
+            <li onclick="filtrar()">PROMOÇÕES</li>
             <li>MEUS LIVROS</li>
             <li>SOBRE NÓS</li>
-            <li>SAIR</li>
+            <li><a href="../Index/index.html">SAIR</a></li>
            </ul>
         </nav>
-        <div>
+        <section id = "conteudo">
             <h2>PROMOÇÕES</h2>
             <figure>
-                <img src="../imgsVideos/A Batalha do Labirinto - Percy Jackson e os Olimpianos 4.jfif" alt="">
-                <img src="../imgsVideos/A Princesa das Cinzas.jfif" alt="">
-                <img src="../imgsVideos/A Rainha Vermelha.jfif" alt="">
-                <img src="../imgsVideos/E Assim Que Acaba.jfif" alt="">
-                <img src="../imgsVideos/Harry Potter E A Pedra Filosofal.jfif" alt="">
-                <img src="../imgsVideos/Livro - O Rei Corvo (Vol_ 4 A Saga Dos Corvos).jfif" alt="">
-                <img src="../imgsVideos/Livro - O Rei Perverso (Vol_ 2 O Povo Do Ar).jfif" alt="">
-                <img src="../imgsVideos/O ultimo olimpiano.jfif" alt="">
-                <img src="../imgsVideos/Orgulho e preconceito.jfif" alt="">
-                <img src="../imgsVideos/Vermelho, branco e sangue azul.jfif" alt="">
+                <div class ="item" data-preco="48.90">
+                    <img src="../imgsVideos/A Batalha do Labirinto - Percy Jackson e os Olimpianos 4.jfif">
+                    <p>Percy Jackson e os Olimpianos</p>
+                    <h3 >R$ 48,90</h3>
+                    <button>Adicionar</button>
+                </div>
+                
+                <div class ="item" data-preco="58.90">
+                    <img src="../imgsVideos/A Princesa das Cinzas.jfif">
+                    <p>A Princesa das Cinzas</p>
+                    <h3>R$ 58,90</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="30.92">
+                    <img src="../imgsVideos/A Rainha Vermelha.jfif"> 
+                    <p>A Rainha Vermelha</p>
+                    <h3>R$ 30,92</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="48.90">
+                    <img src="../imgsVideos/E Assim Que Acaba.jfif">
+                    <p>É Assim Que Acaba</p>
+                    <h3>R$ 48,90</h3>
+                    <button>Adicionar</button>
+                </div>
+                
+                <div class ="item" data-preco="38.99">
+                    <img src="../imgsVideos/Harry Potter E A Pedra Filosofal.jfif">
+                    <p>Harry Potter E A Pedra Filosofal</p>
+                    <h3>R$ 38,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="38.99">
+                    <img src="../imgsVideos/Livro - O Rei Corvo (Vol_ 4 A Saga Dos Corvos).jfif">
+                    <p>O Rei Corvo (Vol 4, A Saga Dos Corvos)</p>
+                    <h3>R$ 38,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="38.99">
+                    <img src="../imgsVideos/Livro - O Rei Perverso (Vol_ 2 O Povo Do Ar).jfif">
+                    <p>O Rei Perverso (Vol 2, O Povo Do Ar)</p>
+                    <h3>R$ 38,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="28.50">
+                    <img src="../imgsVideos/O ultimo olimpiano.jfif">
+                    <p>O ultimo olimpiano, Percy Jackson</p>
+                    <h3>R$ 28,50</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="25.99">
+                    <img src="../imgsVideos/Orgulho e preconceito.jfif">
+                    <p>Orgulho e preconceito</p>
+                    <h3>R$ 25,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="68.90">
+                    <img src="../imgsVideos/Vermelho, branco e sangue azul.jfif">
+                    <p>Vermelho, branco e sangue azul</p>
+                    <h3>R$ 68,99</h3>
+                    <button>Adicionar</button>
+                </div>
 
                 <!--REPETINDO FIGURAS PARA VISUALIZAÇÃO-->
-                <img src="../imgsVideos/A Batalha do Labirinto - Percy Jackson e os Olimpianos 4.jfif" alt="">
-                <img src="../imgsVideos/A Princesa das Cinzas.jfif" alt="">
-                <img src="../imgsVideos/A Rainha Vermelha.jfif" alt="">
-                <img src="../imgsVideos/E Assim Que Acaba.jfif" alt="">
-                <img src="../imgsVideos/Harry Potter E A Pedra Filosofal.jfif" alt="">
-                <img src="../imgsVideos/Livro - O Rei Corvo (Vol_ 4 A Saga Dos Corvos).jfif" alt="">
-                <img src="../imgsVideos/Livro - O Rei Perverso (Vol_ 2 O Povo Do Ar).jfif" alt="">
-                <img src="../imgsVideos/O ultimo olimpiano.jfif" alt="">
-                <img src="../imgsVideos/Orgulho e preconceito.jfif" alt="">
-                <img src="../imgsVideos/Vermelho, branco e sangue azul.jfif" alt="">
+                
+                <div class ="item" data-preco="48.90">
+                    <img src="../imgsVideos/A Batalha do Labirinto - Percy Jackson e os Olimpianos 4.jfif">
+                    <p>Percy Jackson e os Olimpianos</p>
+                    <h3 >R$ 48,90</h3>
+                    <button>Adicionar</button>
+                </div>
+                
+                <div class ="item" data-preco="58.90">
+                    <img src="../imgsVideos/A Princesa das Cinzas.jfif">
+                    <p>A Princesa das Cinzas</p>
+                    <h3>R$ 58,90</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="30.92">
+                    <img src="../imgsVideos/A Rainha Vermelha.jfif"> 
+                    <p>A Rainha Vermelha</p>
+                    <h3>R$ 30,92</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="48.90">
+                    <img src="../imgsVideos/E Assim Que Acaba.jfif">
+                    <p>É Assim Que Acaba</p>
+                    <h3>R$ 48,90</h3>
+                    <button>Adicionar</button>
+                </div>
+                
+                <div class ="item" data-preco="38.99">
+                    <img src="../imgsVideos/Harry Potter E A Pedra Filosofal.jfif">
+                    <p>Harry Potter E A Pedra Filosofal</p>
+                    <h3>R$ 38,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="38.99">
+                    <img src="../imgsVideos/Livro - O Rei Corvo (Vol_ 4 A Saga Dos Corvos).jfif">
+                    <p>O Rei Corvo (Vol 4, A Saga Dos Corvos)</p>
+                    <h3>R$ 38,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="38.99">
+                    <img src="../imgsVideos/Livro - O Rei Perverso (Vol_ 2 O Povo Do Ar).jfif">
+                    <p>O Rei Perverso (Vol 2, O Povo Do Ar)</p>
+                    <h3>R$ 38,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="28.50">
+                    <img src="../imgsVideos/O ultimo olimpiano.jfif">
+                    <p>O ultimo olimpiano, Percy Jackson</p>
+                    <h3>R$ 28,50</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="25.99">
+                    <img src="../imgsVideos/Orgulho e preconceito.jfif">
+                    <p>Orgulho e preconceito</p>
+                    <h3>R$ 25,99</h3>
+                    <button>Adicionar</button>
+                </div>
+
+                <div class ="item" data-preco="68.90">
+                    <img src="../imgsVideos/Vermelho, branco e sangue azul.jfif">
+                    <p>Vermelho, branco e sangue azul</p>
+                    <h3>R$ 68,99</h3>
+                    <button>Adicionar</button>
+                </div>
             </figure>
-        </div>
+
+            <div id="formPagamento">
+                <form action="">
+                    <label>Dados Pessoais</label>
+                    <legend>Nome Completo</legend>
+                    <input type="text" placeholder="Nome completo...">
+                    <legend>E-mail</legend>
+                    <input type="email" placeholder="Digite seu email...">
+                    <legend>Data de nascimento</legend>
+                    <input type="date" placeholder="DD/MM/AA">
+
+                    <label>Dados da Compra</label>
+                    <legend>Nome do titular</legend>
+                    <input type="text" placeholder="Nome completo...">
+                    <label>Número do Cartão:</label>
+                    <input type="text" maxlength="16" placeholder="1234 5678 9012 3456">
+                    <label>Validade:</label>
+                    <input type="text" placeholder="MM/AA"">
+                    <label>CVV:</label>
+                    <input type="text" maxlength="3" placeholder="123">
+                </form>
+            </div>
+        </section>
+
     </main>
-   <!--<footer>
+    <footer>
         <p>Acompanhe as novidades pelo nosso Instagram! </p> <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="../imgsVideos/instagram.png" alt="Logo instagram clicavel"></a>
-    </footer>-->
+    </footer>
+    
+    <script>
+
+        document.getElementById('menu').addEventListener('click', function() {
+            let nav = document.getElementById('barra');
+            let conteudo = document.getElementById('conteudo');
+            
+            nav.classList.toggle('fechada');
+            conteudo.classList.toggle('fechada');
+        });
+
+        function filtrar(){
+            const produtos = document.getElementsByClassName('item');
+            const limitePreco = 40; 
+
+            for (let i = 0; i < produtos.length; i++) {
+
+                const precoTexto = produtos[i].getAttribute('data-preco');
+                const preco = parseFloat(precoTexto);
+
+                if (preco < limitePreco) {
+                    produtos[i].style.display = 'block';
+                } else {
+                    produtos[i].style.display = 'none'; 
+                }
+            }
+        }
+    </script>
 </body>
+</html>
