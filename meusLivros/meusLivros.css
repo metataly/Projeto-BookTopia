@@ -112,54 +112,6 @@ main section figure img:hover {
   content-visibility: hidden;
 }
 
-#formPagamento {
-  width: 100%;
-  font-family: "Cormorant Garamond", serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#formPagamento form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50vw;
-  background-color: #2A4758;
-  border-radius: 5px;
-  border: 2px solid #334c6b;
-}
-#formPagamento form input {
-  padding: 2vh 7vw;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 15px;
-}
-#formPagamento form label {
-  font-size: 1.5em;
-  padding: 5vh;
-}
-#formPagamento form legend {
-  font-size: 1.1em;
-  padding: 1vh;
-}
-
-#sobre {
-  text-align: justify;
-  font-size: 1em;
-  padding: 3vw;
-}
-#sobre h2 {
-  text-align: center;
-  padding: 5vh;
-}
-#sobre p {
-  padding: 1vh;
-}
-
-img {
-  width: 35%;
-}
-
 button {
   width: 6vw;
   border: none;
@@ -180,4 +132,4 @@ footer img {
   margin: 0 1vw;
   width: 3vh;
   cursor: pointer;
-}/*# sourceMappingURL=pagInicial.css.map */
+}/*# sourceMappingURL=meusLivros.css.map */

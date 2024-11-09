@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgsVideos/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="./meusLivros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>BOOKTOPIA</title>
+</head>
+<body>
+    <header id = "telaCheia">
+        <video autoplay muted loop src="../imgsVideos/cabecalhoVideo3.mp4"></video>
+        <nav>
+            <a href="../PaginaInicial/pagInicial.html#formPagamento"><img src="../imgsVideos/carrinho-de-compras.png" alt="carrinho de compras"></a>
+            <a href="../meusLivros/meusLivros.html"><img src="../imgsVideos/do-utilizador.png" alt="minha conta"></a>
+        </nav>
+    </header>
+    <main>
+        <nav id="barra">
+            <button id = "menu">☰</button>
+           <ul>
+            <li> <a href = "../PaginaInicial/pagInicial.html">PROMOÇÕES</a></li>
+            <li> <a href = "../meusLivros/meusLivros.html">MEUS LIVROS </a></li>
+            <li> <a href = "../PaginaInicial/pagInicial.html#sobre">SOBRE NÓS</a></li>
+            <li> <a href="../Index/index.html">SAIR</a></li>
+           </ul>
+        </nav>
+        <section id = "conteudo">
+            <figure>
+                <div>
+                    <img src="../imgsVideos/A Batalha do Labirinto - Percy Jackson e os Olimpianos 4.jfif" onclick="modoLeitura()">
+                    <p>Percy Jackson e os Olimpianos</p>
+                </div>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>Acompanhe as novidades pelo nosso Instagram! </p> <a href="https://www.instagram.com/accounts/login/" target="_blank"><img src="../imgsVideos/instagram.png" alt="Logo instagram clicavel"></a>
+    </footer>
+    
+    <script>
+
+        document.getElementById('menu').addEventListener('click', function() {
+            let nav = document.getElementById('barra');
+            let conteudo = document.getElementById('conteudo');
+            
+            nav.classList.toggle('fechada');
+            conteudo.classList.toggle('fechada');
+        });
+
+        function modoLeitura() {
+            //const telaCheia = document.getElementsById('telaCheia');
+            const container = document.getElementById('conteudo');
+
+            telaCheia.style.display = "none";
+        
+            container.innerHTML = `
+                <iframe src="../imgsVideos/percy-jackson-o-ladrao-de-raios-vol-1-rick-riordan.pdf" width="95%" height="580px"></iframe>
+            `;
+        }
+    </script>
+</body>
+</html>
